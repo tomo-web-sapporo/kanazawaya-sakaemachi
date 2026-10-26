@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>金沢屋 栄町店｜札幌市東区の襖・障子・網戸・畳の張替え</title>
+<meta name="description" content="札幌市東区の襖・障子・網戸・畳の張替専門店「金沢屋 栄町店」。お見積り無料、引き取りから納品まで店主が責任をもって対応します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: 障子の桟（格子）をグリッドの骨組みにした一枚もの。白い和紙に藍と栗色 */
+:root{
+  --washi:#F5F6F3;      /* 和紙の白（わずかに緑みのグレー） */
+  --paper:#FFFFFF;
+  --sumi:#1E2226;       /* 墨 */
+  --sumi-soft:#545B61;
+  --ai:#24476B;         /* 藍：見出し・リンク */
+  --kuri:#8A5B3C;       /* 栗色：障子の桟・木部 */
+  --kuri-line:rgba(138,91,60,.28);
+  --yamabuki:#D99A1E;   /* 山吹：電話・問い合わせ */
+  --yamabuki-ink:#2A1C00;
+  --line:#DCDFDA;
+  --f-display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  --wrap:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--washi);color:var(--sumi);font-family:var(--f-body);font-size:16px;line-height:1.85;letter-spacing:.02em}
+img{max-width:100%;display:block}
+a{color:var(--ai)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--yamabuki);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;text-wrap:balance;line-height:1.4;margin:0}
+p{margin:0}
+.eyebrow{font-family:var(--f-body);font-size:.78rem;font-weight:700;letter-spacing:.2em;color:var(--kuri)}
+section{padding-block:clamp(64px,9vw,112px)}
+.sec-head{display:grid;gap:10px;margin-bottom:clamp(32px,5vw,48px);max-width:40em}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.3rem)}
+.sec-head p{color:var(--sumi-soft)}
+
+/* ヘッダー */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--paper);z-index:60}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--sumi)}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-name{display:grid;line-height:1.2}
+.brand-name b{font-family:var(--f-display);font-size:1.25rem;font-weight:900;letter-spacing:.08em}
+.brand-name small{font-size:.7rem;color:var(--sumi-soft);letter-spacing:.06em}
+.gnav{display:flex;align-items:center;gap:22px}
+.gnav a{color:var(--sumi);text-decoration:none;font-size:.9rem;font-weight:500}
+.gnav a:hover{color:var(--ai)}
+.btn-tel{display:inline-flex;align-items:center;gap:8px;background:var(--yamabuki);color:var(--yamabuki-ink)!important;font-weight:700;padding:10px 16px;border-radius:4px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.btn-tel:hover{filter:brightness(1.05)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:4px;width:44px;height:44px;cursor:pointer;color:var(--sumi)}
+.menu-btn span{display:block;width:20px;height:2px;background:currentColor;margin:4px auto}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .gnav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 16px max(16px,env(safe-area-inset-left,0px))}
+  .gnav a{padding:12px 4px;border-bottom:1px solid var(--line)}
+  .gnav .btn-tel{margin-top:12px;justify-content:center;border:0}
+  .gnav:not(.open){display:none}
+}
+
+/* ヒーロー：障子 */
+.hero{padding-block:clamp(40px,7vw,88px);background:var(--paper);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero h1{font-size:clamp(2rem,5.4vw,3.5rem);font-weight:900;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--ai)}
+.hero-lead{font-size:1.05rem;color:var(--sumi-soft);max-width:30em}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.hero-tags li{border:1px solid var(--kuri-line);color:var(--kuri);font-size:.85rem;padding:4px 12px;border-radius:999px;font-weight:500}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn-line{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ai);color:var(--ai);padding:10px 18px;border-radius:4px;text-decoration:none;font-weight:700}
+.btn-line:hover{background:var(--ai);color:#fff}
+.btn-tel.lg{font-size:1.15rem;padding:14px 22px}
+.shoji{position:relative;aspect-ratio:4/5;max-width:100%;border:10px solid var(--kuri);border-radius:2px;
+  background:
+    linear-gradient(var(--kuri) 0 0) 0 0/100% 4px repeat-y,
+    #FBFBF8;
+  background-image:
+    repeating-linear-gradient(to right,transparent 0 calc(33.333% - 2px),var(--kuri) calc(33.333% - 2px) 33.333%),
+    repeating-linear-gradient(to bottom,transparent 0 calc(16.666% - 2px),var(--kuri) calc(16.666% - 2px) 16.666%),
+    radial-gradient(ellipse at 70% 20%,rgba(217,154,30,.18),transparent 60%),
+    linear-gradient(#FCFCF9,#F1F1EC);
+  box-shadow:0 30px 60px -30px rgba(30,34,38,.35)}
+.shoji::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(255,255,255,0) 40%,rgba(255,255,255,.55) 52%,rgba(255,255,255,0) 64%);animation:sheen 7s ease-in-out infinite}
+@keyframes sheen{0%,100%{opacity:0;transform:translateX(-20%)}50%{opacity:1;transform:translateX(20%)}}
+@media (prefers-reduced-motion:reduce){.shoji::after{animation:none;opacity:0}}
+.shoji-badge{position:absolute;right:-6px;bottom:24px;background:var(--ai);color:#fff;padding:14px 18px;font-family:var(--f-display);font-weight:700;line-height:1.4;box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
+.shoji-badge small{display:block;font-family:var(--f-body);font-size:.72rem;font-weight:500;opacity:.85;letter-spacing:.08em}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.shoji{aspect-ratio:16/11;order:-1}}
+
+/* 選ばれる理由 */
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--kuri-line);border:1px solid var(--kuri-line)}
+.reason{background:var(--washi);padding:28px 24px;display:grid;gap:10px;align-content:start;min-width:0}
+.reason .kanji{font-family:var(--f-display);font-size:2.4rem;font-weight:900;color:var(--ai);line-height:1}
+.reason h3{font-size:1.15rem}
+.reason p{color:var(--sumi-soft);font-size:.95rem}
+@media (max-width:760px){.reasons{grid-template-columns:1fr}}
+
+/* サービス */
+.bg-paper{background:var(--paper)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc{border:1px solid var(--line);background:var(--paper);padding:22px 20px;display:grid;gap:12px;align-content:start;min-width:0;border-radius:3px}
+.svc-ico{width:56px;height:56px}
+.svc h3{font-size:1.25rem}
+.svc p{font-size:.92rem;color:var(--sumi-soft)}
+.svc ul{margin:0;padding:0;list-style:none;display:grid;gap:4px;font-size:.88rem}
+.svc li::before{content:"・";color:var(--kuri)}
+@media (max-width:960px){.services{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.services{grid-template-columns:1fr}}
+.more-svc{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline;padding-top:20px;border-top:1px dashed var(--kuri-line)}
+.more-svc b{font-family:var(--f-display);color:var(--kuri)}
+.more-svc span{font-size:.92rem}
+
+/* 北海道の網戸 */
+.local{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(24px,5vw,56px);align-items:center}
+.local-fig{border:1px solid var(--line);background:var(--paper);padding:20px;border-radius:3px}
+.local-copy{display:grid;gap:16px;min-width:0}
+.local-copy h2{font-size:clamp(1.5rem,3.2vw,2rem)}
+.local-copy p{color:var(--sumi-soft)}
+.local-points{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.local-points li{padding-left:1.4em;position:relative}
+.local-points li::before{content:"";position:absolute;left:0;top:.75em;width:.7em;height:.7em;border:2px solid var(--ai)}
+@media (max-width:760px){.local{grid-template-columns:1fr}}
+
+/* 流れ（実際の手順なので番号を振る） */
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:step;border-top:2px solid var(--sumi)}
+.flow li{counter-increment:step;padding:24px 20px 8px 0;display:grid;gap:8px;align-content:start;min-width:0}
+.flow li+li{padding-left:20px;border-left:1px solid var(--line)}
+.flow li::before{content:counter(step);font-family:var(--f-display);font-size:2rem;font-weight:900;color:var(--ai);line-height:1}
+.flow h3{font-size:1.1rem}
+.flow p{font-size:.92rem;color:var(--sumi-soft)}
+@media (max-width:860px){.flow{grid-template-columns:1fr 1fr}.flow li:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:520px){.flow{grid-template-columns:1fr}.flow li,.flow li+li{padding-left:0;border-left:0;border-bottom:1px solid var(--line);padding-bottom:20px}}
+
+/* 料金 */
+.price-box{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.price-free{background:var(--ai);color:#fff;padding:32px;display:grid;gap:12px;align-content:center;border-radius:3px}
+.price-free b{font-family:var(--f-display);font-size:clamp(1.6rem,4vw,2.2rem)}
+.price-free p{opacity:.9}
+.price-table{border:1px solid var(--line);background:var(--paper);border-radius:3px;overflow-x:auto}
+.price-table table{width:100%;border-collapse:collapse;font-size:.95rem}
+.price-table th,.price-table td{padding:14px 18px;border-bottom:1px solid var(--line);text-align:left}
+.price-table td{text-align:right;color:var(--sumi-soft);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price-table caption{caption-side:bottom;text-align:left;padding:12px 18px;font-size:.82rem;color:var(--sumi-soft)}
+@media (max-width:760px){.price-box{grid-template-columns:1fr}}
+
+
+/* あいさつ */
+.greet{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,56px);align-items:start}
+.greet-side{display:grid;gap:20px;min-width:0}
+.greet-photo{margin:0;border:6px solid var(--paper);outline:1px solid var(--kuri-line);box-shadow:0 20px 40px -24px rgba(30,34,38,.4);aspect-ratio:4/5;max-width:100%;overflow:hidden}
+.greet-photo img{width:100%;height:100%;object-fit:cover;object-position:45% 30%}
+.greet-name{display:grid;gap:8px;border-left:3px solid var(--kuri);padding-left:20px}
+.greet-name b{font-family:var(--f-display);font-size:1.6rem}
+.greet-name span{color:var(--sumi-soft);font-size:.9rem}
+.greet-body{display:grid;gap:18px;max-width:36em}
+.greet-body p{font-size:1.02rem}
+@media (max-width:760px){.greet{grid-template-columns:1fr}.greet-photo{max-width:340px;aspect-ratio:1/1}}
+
+/* FAQ */
+.faq{display:grid;gap:10px;max-width:46em}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:3px}
+.faq summary{cursor:pointer;padding:16px 48px 16px 20px;font-weight:700;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";font-family:var(--f-display);color:var(--ai);margin-right:10px}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--kuri)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 20px 18px 44px;color:var(--sumi-soft)}
+
+/* お知らせ */
+.news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:46em}
+.news li{display:grid;grid-template-columns:7.5em 4.5em 1fr;gap:12px;padding:16px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+.news time{font-variant-numeric:tabular-nums;color:var(--sumi-soft);font-size:.9rem}
+.news .tag{font-size:.72rem;text-align:center;border:1px solid var(--kuri-line);color:var(--kuri);padding:1px 6px;border-radius:2px}
+@media (max-width:520px){.news li{grid-template-columns:auto auto;}.news li p{grid-column:1/-1}}
+
+/* 店舗情報・問い合わせ */
+.shop{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.shop-table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line)}
+.shop-table th,.shop-table td{padding:14px 18px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:.95rem}
+.shop-table th{width:7.5em;color:var(--kuri);font-weight:700;white-space:nowrap}
+.contact-card{background:var(--sumi);color:#fff;padding:32px;border-radius:3px;display:grid;gap:18px;align-content:start}
+.contact-card h3{font-size:1.4rem}
+.contact-card .tel{font-family:var(--f-display);font-size:clamp(1.8rem,5vw,2.4rem);font-weight:900;color:#fff;text-decoration:none;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.contact-card small{color:#C9CDD1}
+.contact-card .mail{color:#fff;word-break:break-all}
+.map-link{display:inline-block;margin-top:12px}
+@media (max-width:860px){.shop{grid-template-columns:1fr}}
+
+/* フッター */
+.site-footer{background:var(--paper);border-top:1px solid var(--line);padding-block:32px calc(32px + env(safe-area-inset-bottom,0px))}
+.site-footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--sumi-soft)}
+
+/* スマホ下部の固定電話ボタン */
+.fixed-tel{display:none}
+@media (max-width:640px){
+  .fixed-tel{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:8px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .fixed-tel a{flex:1;justify-content:center}
+  .site-footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="金沢屋 栄町店 トップへ">
+      <!-- ロゴ画像を差し替える場合：<img src="images/logo.png" alt="金沢屋 栄町店" height="40"> -->
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37" fill="none" stroke="#8A5B3C" stroke-width="3"/><path d="M14 2v36M26 2v36M2 14h36M2 26h36" stroke="#8A5B3C" stroke-width="1.6"/></svg>
+      <span class="brand-name"><b>金沢屋 栄町店</b><small>襖・障子・網戸・畳の張替専門店</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav"><span></span><span></span><span></span></button>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <a href="#service">サービス</a>
+      <a href="#flow">ご依頼の流れ</a>
+      <a href="#price">料金</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#shop">店舗情報</a>
+      <a class="btn-tel" href="tel:0117926525">☎ 011-792-6525</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ヒーロー -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">札幌市東区　2019年開業</p>
+        <h1 id="heroTitle">破れた障子も、<br>くたびれた襖も。<br><em>張り替えて、気持ちよく。</em></h1>
+        <p class="hero-lead">金沢屋 栄町店は、襖・障子・網戸・畳の張替専門店です。ご自宅までお伺いしてお見積り、お預かりして張り替え、またお届けするまで、店主がひとりで責任をもって担当します。</p>
+        <ul class="hero-tags">
+          <li>お見積り無料</li><li>引き取り・納品</li><li>1枚からOK</li><li>網戸の新調</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn-tel lg" href="tel:0117926525">☎ 011-792-6525</a>
+          <a class="btn-line" href="#shop">メールでのご相談</a>
+        </div>
+        <p style="font-size:.85rem;color:var(--sumi-soft)">受付 8:30〜18:00（日曜定休）</p>
+      </div>
+      <div class="shoji" role="img" aria-label="張り替えたばかりの白い障子のイメージ">
+        <div class="shoji-badge"><small>まずはお気軽に</small>お見積り無料</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 選ばれる理由 -->
+  <section aria-labelledby="reasonTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">選ばれる理由</p>
+        <h2 id="reasonTitle">地元・東区の張替屋として</h2>
+      </div>
+      <div class="reasons">
+        <div class="reason"><span class="kanji">近</span><h3>近所の店主がお伺い</h3><p>札幌市東区北38条の店舗から、ご自宅までお見積りにお伺いします。小さなご相談でも遠慮なくお電話ください。</p></div>
+        <div class="reason"><span class="kanji">楽</span><h3>重い建具も運びます</h3><p>襖や障子の取り外し、持ち帰り、張り替え後の取り付けまでお任せください。ご高齢の方のお宅でも安心です。</p></div>
+        <div class="reason"><span class="kanji">丁</span><h3>一枚ずつ丁寧に</h3><p>本部の研修で身につけた技術に、自分なりの工夫を重ねて仕上げています。四隅の角まできれいに張り上げます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス -->
+  <section class="bg-paper" id="service" aria-labelledby="svcTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">サービス</p>
+        <h2 id="svcTitle">張り替えと新調</h2>
+        <p>「破れた」「汚れた」「日焼けした」「開け閉めが重い」など、まずは今の状態をお聞かせください。</p>
+      </div>
+      <div class="services">
+        <article class="svc">
+          <svg class="svc-ico" viewBox="0 0 56 56" aria-hidden="true"><rect x="8" y="4" width="40" height="48" fill="none" stroke="#24476B" stroke-width="2.5"/><rect x="38" y="24" width="4" height="10" rx="2" fill="#8A5B3C"/></svg>
+          <h3>襖（ふすま）</h3>
+          <p>和室の印象を大きく変える襖紙。お部屋に合う柄選びからご相談に乗ります。</p>
+          <ul><li>襖紙の張り替え</li><li>襖の新調</li><li>オリジナル襖</li></ul>
+        </article>
+        <article class="svc">
+          <svg class="svc-ico" viewBox="0 0 56 56" aria-hidden="true"><rect x="8" y="4" width="40" height="48" fill="none" stroke="#24476B" stroke-width="2.5"/><path d="M21.3 4v48M34.6 4v48M8 16h40M8 28h40M8 40h40" stroke="#8A5B3C" stroke-width="1.5"/></svg>
+          <h3>障子</h3>
+          <p>古い紙をはがして桟を整え、真っ白に張り替えます。破れにくい障子紙もあります。</p>
+          <ul><li>障子紙の張り替え</li><li>障子の新調</li></ul>
+        </article>
+        <article class="svc">
+          <svg class="svc-ico" viewBox="0 0 56 56" aria-hidden="true"><rect x="6" y="8" width="44" height="40" fill="none" stroke="#24476B" stroke-width="2.5"/><path d="M6 15h44M6 22h44M6 29h44M6 36h44M6 43h44M13 8v40M20 8v40M27 8v40M34 8v40M41 8v40" stroke="#8A5B3C" stroke-width=".8"/></svg>
+          <h3>網戸</h3>
+          <p>ネットの張り替えのほか、枠ごとの新調、北海道に多い横引きタイプの交換にも対応します。</p>
+          <ul><li>網戸の張り替え</li><li>網戸の新調（新枠）</li><li>横引き網戸の交換</li></ul>
+        </article>
+        <article class="svc">
+          <svg class="svc-ico" viewBox="0 0 56 56" aria-hidden="true"><rect x="4" y="12" width="48" height="32" fill="none" stroke="#24476B" stroke-width="2.5"/><path d="M4 16h48M4 40h48" stroke="#8A5B3C" stroke-width="2"/><path d="M8 20v16M14 20v16M20 20v16M26 20v16M32 20v16M38 20v16M44 20v16" stroke="#8A5B3C" stroke-width=".6" opacity=".6"/></svg>
+          <h3>畳</h3>
+          <p>表替えや新調で、い草の香りがよみがえります。お部屋の使い方に合わせてご提案します。</p>
+          <ul><li>畳の表替え</li><li>畳の新調</li></ul>
+        </article>
+      </div>
+      <div class="more-svc">
+        <b>そのほか</b>
+        <span>掛け軸の新調</span><span>賃貸物件の入退去時の張り替え（オーナー様・管理会社様）</span><span>旅館・お寺・飲食店など法人のご依頼</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 北海道の網戸 -->
+  <section aria-labelledby="localTitle">
+    <div class="wrap local">
+      <figure class="local-fig" style="margin:0">
+        <svg viewBox="0 0 360 220" role="img" aria-label="横引きロール網戸の模式図">
+          <rect x="10" y="20" width="340" height="180" fill="none" stroke="#1E2226" stroke-width="3"/>
+          <rect x="18" y="28" width="30" height="164" fill="#24476B"/>
+          <rect x="48" y="28" width="196" height="164" fill="url(#mesh)" stroke="#8A5B3C" stroke-width="1"/>
+          <rect x="240" y="28" width="8" height="164" fill="#8A5B3C"/>
+          <path d="M262 110h60m-12-10l12 10-12 10" fill="none" stroke="#D99A1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="33" y="214" text-anchor="middle" font-size="12" fill="#545B61">巻取り部</text>
+          <text x="146" y="214" text-anchor="middle" font-size="12" fill="#545B61">ネット</text>
+          <text x="292" y="96" text-anchor="middle" font-size="12" fill="#545B61">横に引く</text>
+          <defs><pattern id="mesh" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0h6M0 0v6" stroke="#8A5B3C" stroke-width=".5" opacity=".6"/></pattern></defs>
+        </svg>
+      </figure>
+      <div class="local-copy">
+        <p class="eyebrow">北海道ならでは</p>
+        <h2>横引きロール網戸も、<br>まるごと交換できます</h2>
+        <p>北海道の住宅では、窓の横に巻き取る「横引きロール」や「横引きスライド」の網戸が主流です。ネットだけの張り替えができないタイプが多いため、製品ごとの交換をご提案します。</p>
+        <ul class="local-points">
+          <li>巻き取りが戻らない・途中で止まる</li>
+          <li>ネットが破れて虫が入ってくる</li>
+          <li>サイズが合わず、すき間ができている</li>
+        </ul>
+        <p>窓のサイズを測って、合う製品をお見積りします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご依頼の流れ -->
+  <section class="bg-paper" id="flow" aria-labelledby="flowTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">ご依頼の流れ</p>
+        <h2 id="flowTitle">お電話から納品まで</h2>
+      </div>
+      <ol class="flow">
+        <li><h3>お問い合わせ</h3><p>お電話かメールで、枚数やお困りごとをお知らせください。</p></li>
+        <li><h3>お見積り（無料）</h3><p>ご自宅にお伺いし、現物を見て料金をご案内します。</p></li>
+        <li><h3>お預かり・張り替え</h3><p>建具をお預かりし、店舗の作業場で張り替えます。</p></li>
+        <li><h3>お届け・取り付け</h3><p>仕上がりを確認していただき、取り付けて完了です。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section id="price" aria-labelledby="priceTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">料金</p>
+        <h2 id="priceTitle">料金のご案内</h2>
+        <p>素材やサイズ、建具の状態で料金が変わるため、現物を見てからお見積りします。お見積り後のお断りも大丈夫です。</p>
+      </div>
+      <div class="price-box">
+        <div class="price-free">
+          <b>お見積り・出張無料</b>
+          <p>札幌市東区を中心にお伺いします。そのほかの地域もお気軽にご相談ください。</p>
+        </div>
+        <div class="price-table">
+          <table>
+            <!-- 料金確定後に「お問い合わせください」を金額に書き換えてください -->
+            <tr><th>襖の張り替え（1枚）</th><td>お問い合わせください</td></tr>
+            <tr><th>障子の張り替え（1枚）</th><td>お問い合わせください</td></tr>
+            <tr><th>網戸の張り替え（1枚）</th><td>お問い合わせください</td></tr>
+            <tr><th>畳の表替え（1畳）</th><td>お問い合わせください</td></tr>
+            <caption>表示料金は準備中です。税込表示に統一する予定です。</caption>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店主あいさつ -->
+  <section class="bg-paper" aria-labelledby="greetTitle">
+    <div class="wrap greet">
+      <div class="greet-side">
+      <figure class="greet-photo"><img src="images/owner.jpg" alt="店主 山屋敏美" width="1200" height="800" loading="lazy"></figure>
+      <div class="greet-name">
+        <p class="eyebrow">店主あいさつ</p>
+        <h2 id="greetTitle" style="font-size:clamp(1.5rem,3.2vw,2rem)">人に喜んでもらえる仕事を</h2>
+        <b>山屋 敏美</b>
+        <span>金沢屋 栄町店 代表</span>
+      </div>
+      </div>
+      <div class="greet-body">
+        <p>会社勤めを長く続けたあと、「これからは地域の方の暮らしを支える仕事がしたい」と考え、2019年に金沢屋 栄町店を開きました。</p>
+        <p>お伺いしたお宅で「きれいになったね」と言っていただけるのが、何よりの励みです。重い建具の持ち運びや、なかなか手の回らない網戸の交換など、困ったときに気軽に声をかけてもらえる店でありたいと思っています。</p>
+        <p>見積りだけでもかまいません。どうぞお気軽にご連絡ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- お知らせ -->
+  <section aria-labelledby="newsTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">お知らせ</p>
+        <h2 id="newsTitle">お知らせ</h2>
+      </div>
+      <ul class="news">
+        <!-- 新しいお知らせはこの一番上に追加してください -->
+        <li><time datetime="2026-10-17">2026.10.17</time><span class="tag">お店</span><p>ホームページをリニューアルしました。</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-paper" id="faq" aria-labelledby="faqTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">よくある質問</p>
+        <h2 id="faqTitle">よくある質問</h2>
+      </div>
+      <div class="faq">
+        <details><summary>1枚だけでもお願いできますか？</summary><p>はい、1枚からお受けしています。破れてしまった障子1枚だけ、といったご依頼もお気軽にどうぞ。</p></details>
+        <details><summary>見積りだけでも来てもらえますか？</summary><p>お見積りは無料です。料金をご確認いただいてから、お願いするかどうかを決めていただけます。</p></details>
+        <details><summary>建具の取り外しや運び出しは自分でするのですか？</summary><p>取り外しから持ち帰り、張り替え後の取り付けまでこちらで行います。</p></details>
+        <details><summary>お預かりからお届けまで何日くらいかかりますか？</summary><p>枚数や混み具合によって変わります。お見積りの際に、お届けの目安日をお伝えします。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店舗情報・お問い合わせ -->
+  <section id="shop" aria-labelledby="shopTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">店舗情報・お問い合わせ</p>
+        <h2 id="shopTitle">金沢屋 栄町店</h2>
+      </div>
+      <div class="shop">
+        <div>
+          <table class="shop-table">
+            <tr><th>店舗名</th><td>金沢屋 栄町店</td></tr>
+            <tr><th>代表</th><td>山屋 敏美</td></tr>
+            <tr><th>所在地</th><td>北海道札幌市東区北38条東10丁目2-6<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%9D%B1%E5%8C%BA%E5%8C%9738%E6%9D%A1%E6%9D%B110%E4%B8%81%E7%9B%AE2-6" target="_blank" rel="noopener">Googleマップで見る</a></td></tr>
+            <tr><th>受付時間</th><td>8:30〜18:00（平日・土曜・祝日）</td></tr>
+            <tr><th>定休日</th><td>日曜日</td></tr>
+            <tr><th>取扱品目</th><td>襖・障子・網戸・畳の張り替えと新調、掛け軸の新調</td></tr>
+            <tr><th>開業</th><td>2019年6月</td></tr>
+          </table>
+        </div>
+        <div class="contact-card">
+          <h3>お電話でのご相談</h3>
+          <a class="tel" href="tel:0117926525">011-792-6525</a>
+          <small>携帯：090-5071-9188（外出中はこちらへ）<br>受付 8:30〜18:00（日曜定休）</small>
+          <h3 style="margin-top:8px">メールでのご相談</h3>
+          <a class="mail" href="mailto:kanazawaya.sakaemachi@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%EF%BC%88%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%EF%BC%89">kanazawaya.sakaemachi@gmail.com</a>
+          <small>張り替えたい物（襖・障子など）と枚数、ご希望の連絡方法をお書き添えください。</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>金沢屋 栄町店　札幌市東区北38条東10丁目2-6　TEL 011-792-6525</span>
+    <span>© 2026 金沢屋 栄町店</span>
+  </div>
+</footer>
+
+<div class="fixed-tel">
+  <a class="btn-tel" href="tel:0117926525">☎ 電話する</a>
+  <a class="btn-line" href="#shop" style="background:#fff">メール</a>
+</div>
+
+<script>
+// スマホメニュー
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('gnav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+    btn.setAttribute('aria-label',open?'メニューを閉じる':'メニューを開く');
+  });
+  nav.addEventListener('click',function(e){ if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');} });
+})();
+</script>
+</body>
+</html>
